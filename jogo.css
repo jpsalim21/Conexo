@@ -1,0 +1,94 @@
+.Mestre{
+    background-color: #0f172a;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+body {
+    background-color: #0f172a; /* Substitua #1e293b pela cor que você deseja */
+}
+.top{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 35%;
+}
+.mid{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 35%;
+}
+.game button {
+    width: 120px;
+    height: 85px;
+    margin: 5px;
+    font-size: 20px;
+    border: none;
+}
+.game {
+    display: grid;
+    grid-auto-flow: row;
+    grid-template-columns: repeat(4, 1fr);
+}
+.acertos{
+    width: 35%;
+}
+.acertos div{
+    background-color: #1e293b;
+    border-radius: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 85px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.acertos div h2{
+    margin: 0;
+}
+.acertos div p{
+    margin: 2;
+}
+H1{
+    color: white;
+}
+h2{
+    color: white;
+}
+button{
+    background-color: #1e293b;
+    border-radius: 10px;
+    cursor: pointer;
+    border: none;
+}
+button:hover{
+    background-color: #3d5a80;
+}
+p{
+    color: white;
+}
+.errado {
+    border: 2px solid red !important;
+    animation: errar 1s linear;
+}
+
+@keyframes errar {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(10deg);
+    }
+    75% {
+        transform: rotate(-10deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
